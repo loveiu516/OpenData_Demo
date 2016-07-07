@@ -6,9 +6,9 @@ public class main {
 		// TODO Auto-generated method stub
     download dl = new download();
     gzip gz = new gzip();
-    //gzip檔案格式使用
+    // for cloud file(gz file) download
     dl.download_gzip("http://data.taipei/youbike", "D:\\youbike1.gz");
-    //非gzip檔案格式使用
+    // for non-cloud file download
     //dl.download("url", "D:\\tmp.gz");
     gz.ungzipfile("D:\\youbike1.gz", "D:\\youbike.json");
 	}
